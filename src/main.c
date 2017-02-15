@@ -1,4 +1,5 @@
 #include "main.h"
+#include "devices.h"
 
 int __init initialize(void)
 {

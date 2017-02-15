@@ -1,10 +1,10 @@
-TARGET = netlink
+TARGET = netlink_kmod
 SRC_DIR = src
 
 KERNELDIR ?= /lib/modules/$(shell uname -r)/build
 
 obj-m := ${TARGET}.o
-${TARGET}-objs := ${SRC_DIR}/netlink.o ${SRC_DIR}/main.o
+${TARGET}-objs := ${SRC_DIR}/main.o ${SRC_DIR}/devices.o ${SRC_DIR}/sockets.o
 
 ccflags-y := -I$(PWD)/include -Wall -Werror
 asflags-y :=

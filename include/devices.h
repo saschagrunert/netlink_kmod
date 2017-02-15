@@ -1,9 +1,15 @@
 #include <net/rtnetlink.h>
 
 /**
+ * @brief A custom netlink device
+ */
+typedef struct _netlink_device_t {
+} netlink_device_t;
+
+/**
  * @brief Register the netlink device
  *
- * @retval  0   on success, anything other on failure
+ * @retval  0   on success, anything else on failure
  */
 int netlink_register(void);
 
