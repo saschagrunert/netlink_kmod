@@ -16,7 +16,7 @@ int __init initialize(void)
     return ret;
 }
 
-void __init uninitialize(void)
+void __exit uninitialize(void)
 {
     // Unregister the device
     netlink_unregister();
